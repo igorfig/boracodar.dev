@@ -1,0 +1,249 @@
+:root {
+	--white: #FFF;
+	--purple: #633BBC;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+	border-radius: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Rubik', sans-serif;
+}
+
+div#container #boarding-pass {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 2rem;
+}
+
+div#container #boarding-pass h1 {
+	font-size: 20px;
+	color: var(--white);
+	font-weight: 500;
+
+	padding: 2rem 0;
+}
+
+div#container div#boarding-pass div.ticket {
+	max-width: 350px;	
+	background: var(--white);
+	border-radius: 24px;
+	display: flex;
+	flex-direction: column;
+}
+
+div.ticket div.flight-info {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+div.ticket div.flight-info div.container-1, div.container-2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container-1 div {
+	display: flex;
+	flex-direction: column ;
+}
+
+.container-1 div span {
+	color: rgba(0, 0, 0, 0.64);
+	font-size: 14px;
+}
+
+.container-1 div strong {
+	color: rgba(0, 0, 0, 0.88);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.container-1 div:last-child {
+	text-align: right;
+}
+
+.container-2 div {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-2 div span {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.64);
+	font-weight: 400;
+}
+
+.container-2 div strong {
+	font-size: 40px;
+	line-height: 47px;
+	font-weight: 500;
+}
+
+.container-2 div span.time {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.container-2 div:last-child {
+	text-align: right;
+}
+
+div.ticket div.separator {
+	border-top: 1px dashed rgba(0, 0, 0, 0.32);
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.32);
+	position: relative;
+
+	padding: 2rem;
+}
+
+div.separator div.bubble {
+	width: 24px;
+	height: 24px;
+	border-radius: 100%;
+	position: absolute;
+}
+
+div.separator div.top-left{
+	top: -10px;
+	left: -10px;
+	background: #5E3FA5;
+}
+
+div.top-right {
+	top: -10px;
+	right: -10px;
+	background: #553996;
+}
+
+
+div.bottom-left {
+	bottom: -10px;
+	left: -10px;
+	background: #533893;
+}
+
+div.bottom-right {
+	bottom: -10px;
+	right: -10px;
+	background: #4B3285;
+}
+
+div.separator .passenger-info  {
+	display: flex;
+	flex-direction: row
+	align-items: center;
+	justify-content: space-between;
+}
+
+div.separator .passenger-info div {
+	display: flex;
+	flex-direction: column;
+}
+
+div.passenger-info div span {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.64);
+	font-weight: 400;
+}
+
+div.passenger-info div strong {
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.88);
+	font-size: 16px;
+}
+
+div.boarding-info-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 2rem;
+}
+
+div.boarding-info-container div.boarding-info {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+div.boarding-info-container div.boarding-info div {
+	display: flex;
+	flex-direction: column;
+	gap: .25rem;
+}
+
+div.boarding-info-container div.boarding-info span {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.64);
+}
+
+div.boarding-info-container div.boarding-info .boarding-time strong {
+	background: var(--purple);
+	max-width: 50px;
+	padding: 4px;
+	border-radius: 8px;
+	font-size: 16px;
+	color: var(--white);
+	font-weight: 500;
+}
+
+div.boarding-info strong:not(:first-child) {
+	color: rgba(0, 0, 0, 0.88);
+}
+
+div.qr-code {
+	width: 160px;
+}
+
+div.qr-code span {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.64);
+}
+
+div.ticket div.message {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0;
+}
+div.ticket div.message span {
+	width: 100%;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: 400;
+}
+
+div.ticket div.message strong {
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.88);
+}
+
+div#boarding-pass .help-message {
+	max-width: 350px;
+	padding: 2rem;
+}
+
+div#boarding-pass .help-message small {
+	color: var(--white);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
