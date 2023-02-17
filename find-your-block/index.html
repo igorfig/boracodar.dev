@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Find your block</title>
+</head>
+<body>
+	<div id="container">
+		<header class="header">
+			<img class="img-top" src="./images/ilustra-01.svg" alt="Ilustração">
+			<img class="img-bottom" src="./images/ilustra-02.svg" alt="Ilustração">
+
+			<div class="header-content">
+				<span>FIND YOUR BLOCK</span>
+				<h1>Encontre os <span>melhores blocos</span> de carnaval de 2023</h1>
+			</div>
+
+			<div class="header-actions">
+				<div class="input">
+					<img src="./images/magnifier.svg" alt="Lupa">
+					<input type="text" placeholder="Pesquise por nome" class="search-carnaval-block">
+				</div>
+
+				<div class="select">
+					<img src="./images/map-marker.svg" alt="Marcador de mapa">
+					<select class="city-options">
+						<option selected>Selecione uma cidade</option>
+						<option value="São Paulo - SP">São Paulo - SP</option>
+						<option value="Florianópolis - SC">Florianópolis - SC</option>
+						<option value="Curitiba - PR">Curitiba - PR</option>
+						<option value="Salvador - BA">Salvador - BA</option>
+						<option value="Rio de Janeiro - RJ">Rio de Janeiro - RJ</option>
+						<option value="Porto Alegre - RS">Porto Alegre - RS</option>
+					</select>
+				</div>
+
+				<button type="button" class="find-result">
+					BUSCAR AGORA
+				</button>
+			</div>
+		</header>
+
+		<main class="content">
+			<div class="header">
+				<h2>Blocos recomendados</h2>
+
+				<div>
+					<button class="selected">LISTA</button>
+					<button>MAPA</button>
+				</div>
+			</div>
+
+			<div class="carnaval-blocks">
+				<div class="card" id="card-1">
+					<img src="./images/unsplash.svg" alt="Imagem ilustrativa do carnaval">
+					<div class="card-content">
+						<h3>O Python do vovô não sobe mais</h3>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+						<span>
+							<img src="./images/map-marker.svg" alt="marcador de mapa">
+							São Paulo - SP
+						</span>
+					</div>
+				</div>
+
+				<div class="card" id="card-2">
+					<img src="./images/unsplash-01.svg" alt="Imagem ilustrativa do carnaval">
+					<div class="card-content">
+						<h3>Todo mundo null</h3>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+						<span>
+							<img src="./images/map-marker.svg" alt="marcador de mapa">
+							Florianópolis - SC
+						</span>
+					</div>
+				</div>
+
+				<div class="card" id="card-3">
+					<img src="./images/unsplash-02.svg" alt="Imagem ilustrativa do carnaval">
+					<div class="card-content">
+						<h3>O Hoje dou exception</h3>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+						<span>
+							<img src="./images/map-marker.svg" alt="marcador de mapa">
+							Curitiba - PR
+						</span>
+					</div>
+				</div>
+
+
+				<div class="card" id="card-4">
+					<img src="./images/unsplash-03.svg" alt="Imagem ilustrativa do carnaval">
+					<div class="card-content">
+						<h3>Manda Node</h3>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+						<span>
+							<img src="./images/map-marker.svg" alt="marcador de mapa">
+							Salvador - BA
+						</span>
+					</div>
+				</div>
+
+
+				<div class="card" id="card-5">
+					<img src="./images/unsplash-04.svg" alt="Imagem ilustrativa do carnaval">
+					<div class="card-content">
+						<h3>Só no back-end</h3>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+						<span>
+							<img src="./images/map-marker.svg" alt="marcador de mapa">
+							São Paulo - SP
+						</span>
+					</div>
+				</div>
+
+				<div class="card" id="card-6">
+					<img src="./images/unsplash-05.svg" alt="Imagem ilustrativa do carnaval">
+					<div class="card-content">
+						<h3>Esse anel não é de Ruby</h3>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+						<span>
+							<img src="./images/map-marker.svg" alt="marcador de mapa">
+							São Paulo - SP
+						</span>
+					</div>
+				</div>
+
+
+
+				<div class="card" id="card-7">
+					<img src="./images/unsplash-06.svg" alt="Imagem ilustrativa do carnaval">
+					<div class="card-content">
+						<h3>Pimenta no C# dos outros é refresco</h3>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+						<span>
+							<img src="./images/map-marker.svg" alt="marcador de mapa">
+							Rio de Janeiro - RJ
+						</span>
+					</div>
+				</div>
+
+
+
+				<div class="card" id="card-8">
+					<img src="./images/unsplash-07.svg" alt="Imagem ilustrativa do carnaval">
+					<div class="card-content">
+						<h3>EnCACHE aqui</h3>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+						<span>
+							<img src="./images/map-marker.svg" alt="marcador de mapa">
+							Porto Alegre - RS
+						</span>
+					</div>
+				</div>
+
+
+
+				<div class="card" id="card-9">
+					<img src="./images/unsplash-08.svg" alt="Imagem ilustrativa do carnaval">
+					<div class="card-content">
+						<h3>Não valho nada mas JAVA li</h3>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+						<span>
+							<img src="./images/map-marker.svg" alt="marcador de mapa">
+							São Paulo - SP
+						</span>
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
